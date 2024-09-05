@@ -39,20 +39,20 @@ headsepline, % Uncomment to get a line under the header
 %\posgrado{Maestría en Sistemas Embebidos} 
 %\posgrado{Maestría en Internet de las cosas}
 
-\author{Nombre del autor} % Tu nombre, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \authorname
+\author{Ing. Martín Paura Bersan} % Tu nombre, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \authorname
 
-\director{Nombre del director (pertenencia)} % El nombre del director, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \dirname
-\codirector{Nombre del codirector (pertenencia)} % El nombre del codirector si lo hubiera, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \codirname.  Para activar este campo se debe descomentar la opción "codirector" en el comando \documentclass, línea 23.
+\director{Ing. Daniel Pablo Jacoby (ITBA)} % El nombre del director, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \dirname
+%\codirector{Nombre del codirector (pertenencia)} % El nombre del codirector si lo hubiera, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \codirname.  Para activar este campo se debe descomentar la opción "codirector" en el comando \documentclass, línea 23.
 
-\juradoUNO{Nombre del jurado 1 (pertenencia)} % Nombre y pertenencia del un jurado se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \jur1name
+\juradoUNO{Nicolas Alvarez (FIUBA)} % Nombre y pertenencia del un jurado se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \jur1name
 \juradoDOS{Nombre del jurado 2 (pertenencia)} % Nombre y pertenencia del un jurado se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \jur2name
 \juradoTRES{Nombre del jurado 3 (pertenencia)} % Nombre y pertenencia del un jurado se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \jur3name
 
-%\ciudad{Ciudad Autónoma de Buenos Aires}
-\ciudad{ciudad de Mendoza}
+\ciudad{Ciudad Autónoma de Buenos Aires}
+%\ciudad{ciudad de Mendoza}
 
-\fechaINICIO{marzo de 2020}
-\fechaFINAL{diciembre de 2020}
+\fechaINICIO{octubre de 2023}
+\fechaFINAL{abril de 2025}
 
 
 \keywords{Sistemas embebidos, FIUBA} % Keywords for your thesis, print it elsewhere with \keywordnames
@@ -76,7 +76,12 @@ headsepline, % Uncomment to get a line under the header
 %The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
 \centering
 
-El resumen debe escribirse en uno o dos párrafo.  Debe ser breve y conciso sin ningún elemento de formato en el texto como itálicas o negrita. Tampoco se deben usar siglas ni acrónimos que no resulten obvios para un lector promedio de la memoria, ni referencias bibliográficas o notas al pie de página.  No debe faltar qué es lo que se hizo/logró, qué importancia/valor tiene el proyecto/resultado, qué va a encontrar el lector en la memoria y qué contenidos de la especialización/maestría se aplicaron en el proyecto.
+%El resumen debe escribirse en uno o dos párrafo.  Debe ser breve y conciso sin ningún elemento de formato en el texto como itálicas o negrita. Tampoco se deben usar siglas ni %acrónimos que no resulten obvios para un lector promedio de la memoria, ni referencias bibliográficas o notas al pie de página.  No debe faltar qué es lo que se hizo/logró, qué %importancia/valor tiene el proyecto/resultado, qué va a encontrar el lector en la memoria y qué contenidos de la especialización/maestría se aplicaron en el proyecto.
+
+ La presente memoria describe el diseño de un de un sistema de procesamiento de señales de RADAR para generar una imagen SAR que será montado en una constelación de satélites.
+ El desarrollo del módulo se realiza en el marco del proyecto FOCUS cuya finalidad es prevenir posibles catástrofes debidas al deterioro de infraestructuras críticas.
+ Con este sistema se disminuye considerablemente el tiempo de procesamiento de las señales y la cantidad de datos que se deben transmitir desde los satélites a las estaciones terrenas.
+ El proyecto abarcó la planificación, el desarrollo del firmmware, software y diseño de lógica programable para interactuar con los distintos sistemas de satélite. procesar la información y enviar las imágenes generadas según protocolos definidos especialmente. 
 
 \end{abstract}
 
@@ -119,10 +124,10 @@ Esta sección es para agradecimientos personales y es totalmente \textbf{OPCIONA
 
 % Incluir los capítulos como archivos separados desde la carpeta Chapters
 
-\include{Chapters/Chapter1}
-\include{Chapters/Chapter2} 
-\include{Chapters/Chapter3}
-\include{Chapters/Chapter4} 
+\include{Chapters/IntroGeneral}
+\include{Chapters/IntroEspecifica} 
+\include{Chapters/DisenoeImplement}
+\include{Chapters/EnsayosyResultados} 
 \include{Chapters/Chapter5} 
 
 %----------------------------------------------------------------------------------------
